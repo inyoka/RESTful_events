@@ -18,7 +18,7 @@ class CompanyTimeline(Resource):
             if event['name'] == name:
                 return event
 
-        return {'name':None}
+        return {'name':None}, 404
 
 
     def post(self, name):
